@@ -114,6 +114,7 @@ function startGame() {
   gameHint = GameHints[random];
   lives = 10;
   winStatus = 0;
+  hintPara.textContent = "";
   removeLives();
   createLives();
   showLives();
