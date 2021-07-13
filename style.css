@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  padding: 1em;
+  width: 100%;
+  background-color: #2c3e50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_word {
+  background-color: #2ecc71;
+  padding: 2em;
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+
+.main_body {
+  background-color: #27ae60;
+  flex: 1;
+  display: flex;
+  position: relative;
+}
+
+.main_body_letters {
+  height: 100%;
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_body_letters_field {
+  margin-top: 5%;
+  width: 80%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1em;
+  padding: 1em;
+}
+
+.main_body_letters_field button {
+  height: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-bottom: 100%;
+  position: relative;
+  border: 0;
+  border-radius: 15%;
+  font-size: 120%;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.main_body_letters_field button:disabled {
+  background-color: red;
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.main_body_letters_field button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.main_body_letters_field button div {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_body_lives {
+  height: 100%;
+  width: 26%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main_body_instruction {
+  height: 100%;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_body_instruction_buttons {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.main_body_instruction button {
+  padding: 2em;
+  margin: 1em;
+  width: 25%;
+  border: 0;
+  border-radius: 100%;
+  font-size: 150%;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+  opacity: 0.8;
+  display: inline;
+}
+
+.main_body_instruction button:hover {
+  opacity: 1;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 3%;
+}
+
+footer {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.fa-heart {
+  color: red;
+  font-size: 150%;
+  padding: 0.5em;
+  text-align: center;
+}
+
+ol {
+  padding: 2em;
+  font-size: 1.2em;
+  font-style: italic;
+}

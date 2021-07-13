@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/9620fd7ad5.js" crossorigin="anonymous"></script>
+
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hangman game</h1>
+    </header>
+    <main>
+      <section class="main_word"></section>
+      <div class="main_body">
+        <section class="main_body_letters">
+          <h2>Letters</h2>
+          <div class="main_body_letters_field"></div>
+        </section>
+        <section class="main_body_lives">
+          <h2>Lives</h2>
+          <p class="lives"></p>
+          <p class="hint"></p>
+        </section>
+        <section class="main_body_instruction">
+          <h2>Instruction</h2>
+          <ol>
+            <li>Twoim zadaniem jest odgadnięcie hasła, poprzez znajdywanie jego liter.</li>
+            <li>Masz 10 żyć, za każdy błąd tracisz jedno.</li>
+            <li>Po 10 błędnych próbach przegrywasz.</li>
+            <li>Kończysz zwycięsko grę, w momencie uzupełnienia wszystkich liter w słowie.</li>
+            <li>W celu ponownego uruchomienia gry lub chęci zmiany słowa kliknij poniższy przycisk.</li>
+          </ol>
+          <div class="main_body_instruction_buttons"><button class="resetBtn">Play again</button> <button class="hintBtn">Hint</button></div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>Hangman Game ** Copyright Artur Pajor 2021 &copy;</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
